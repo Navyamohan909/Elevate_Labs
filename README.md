@@ -112,3 +112,87 @@ This project helped in understanding the basics of regression modeling and how t
 This project was completed as part of **Task 3** of the AI/ML Internship and submitted via GitHub.
 
 
+# 🧠 Breast Cancer Prediction using Logistic Regression
+
+This project is a beginner-level Machine Learning task aimed at building a binary classifier using the Logistic Regression algorithm. The goal is to predict whether a breast tumor is **malignant** or **benign** based on various features of cell nuclei derived from digitized images.
+
+---
+
+## 📌 Objective
+
+- Build a binary classification model using logistic regression.
+- Apply preprocessing techniques including feature scaling.
+- Evaluate the model using classification metrics and visual tools.
+
+---
+
+## 🗂 Dataset
+
+- **Name:** Breast Cancer Wisconsin Diagnostic Dataset
+- **Source:** [Kaggle UCI ML Repo](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
+- **Attributes:** 32 columns including ID, diagnosis (M = malignant, B = benign), and 30 real-valued input features.
+
+---
+
+## 🛠️ Tools & Libraries Used
+
+- Python 3.x
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+
+---
+
+## 📊 Features
+
+- **Data Cleaning:** Removed null values and unnecessary ID columns.
+- **Label Encoding:** Converted diagnosis labels to binary format (M=1, B=0).
+- **Train-Test Split:** Divided dataset into training and test sets (80/20).
+- **Feature Scaling:** Applied StandardScaler to normalize feature values.
+- **Model Building:** Used Logistic Regression for binary classification.
+- **Evaluation Metrics:**
+  - Confusion Matrix
+  - Classification Report (Precision, Recall, F1-Score)
+  - ROC-AUC Score
+  - ROC Curve Plot
+
+---
+
+## 📈 Model Performance
+
+Example output (may vary depending on split):
+
+- **Accuracy:** 97.3%
+- **Precision:** 96%
+- **Recall:** 98%
+- **AUC Score:** 0.99
+
+---
+
+## 🧠 Key Learnings
+
+- How Logistic Regression works for binary classification.
+- Importance of data preprocessing and feature scaling.
+- Use of ROC curves and AUC for evaluating classifier performance.
+- Practical understanding of confusion matrix, precision, recall, and F1-score.
+
+---
+
+## 🚀 Future Enhancements
+
+- Hyperparameter tuning using GridSearchCV.
+- Add support for multiclass classification.
+- Integrate interactive visualizations (e.g., Plotly).
+- Save the model using `joblib` or `pickle` for deployment.
+
+---
+
+## ✅ How to Run the Code
+
+1. Download the dataset from Kaggle and place `data.csv` in the project directory.
+2. Install required libraries:
+
+   ```bash
+   pip install pandas numpy scikit-learn matplotlib seaborn
